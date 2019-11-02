@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+:root {
+  --main-color: #F6FCF8;
+  --text-bright-color: #fff;
+  /* --panel-main-color: rgba(7, 255, 250, 0.25); */
+  --panel-main-color: rgba(200, 255, 255, 0.4);
+}
+
+body {
+  font-family: 'メイリオ',
+  'Hiragino Kaku Gothic Pro',
+  sans-serif;
+}
+header img {
+  width: 28px;
+  margin-left: 40px;
+}
+header h1 {
+  display: inline;
+  letter-spacing: 0.5rem;
+  margin-left: 5px;
+  vertical-align: text-bottom;
+}
+header ul {
+  list-style: none;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header a:hover {
+  opacity: 0.1;
+  color: skyblue;
+}
+
+.root-container {
+  display: flex;
+}
+
+.root-container aside {
+  flex: 35%;
+  border: solid 1px;
+  margin-left: 0;
+  padding-left: 5px;
+}
+
+.background-container {
+
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  url(white_tex.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-right: 15px;
+  margin-left: 20px;
+  background-blend-mode: screen;
+
+}
+.background-panel {
+  background: var(--panel-main-color);
+  width: 96%;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.new-article-container {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(2.5px);
+}
+.new-article-container .top {
+  flex 1;
+}
+.new-article-container .text {
+  margin-left: 8px;
+  flex: 1;
+}
+.new-article-container .top {
+  margin-top: 20px;
+}
+.top article {
+  height: 500px;
+  width: 450px;
+  margin: 10px;
+  border: solid 1.5px #fff;
+}
+.top a {
+  text-decoration: none;
+  color: inherit;
+}
+.top a:hover {
+
+}
+.top .photo {
+  background: url(light1.jpg);
+  min-height: 50%;
+}
+
+.new-article-container .second {
+  flex 1;
+  display: flex;
+  align-items: center;
+}
+.second article {
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  /* box-shadow: 10px 10px 10px rgba(0,0,0,0.5); */
+
+}
+.second a {
+  display: flex;
+  flex: 1;  /*たぶんコレは親=全体で1とする*/
+  text-decoration: none;
+  color: inherit;
+  border-top: solid 1.5px #fff;
+  border-right: solid 1.5px #fff;
+  border-bottom: solid 1.5px #fff;
+
+}
+.second a:hover {
+}
+.second .photo {
+  flex: 1;  /*↓との比率を1:1 = 50%*/
+  background: url(light2.jpg);
+  height: 300px;
+
+}
+
+.new-article-container .photo {
+  background-position: center;
+  background-size: cover;
+}
+
+.old-article-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(2.5px);
+}
+
+.c article {
+  display: flex;
+  justify-content: flex-end;
+  background: url(cherry.jpg); /*あとでhtmlに個別に画像適用する*/
+  height: 300px;
+  width: 600px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+
+}
+.c .text {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6.5px);
+}
+.c a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #888;
+
+}
+.c a:hover {
+  background-color: skyblue;
+  transition: 0.15s;
+}
+
+footer {
+  margin-left: 4px;
+}
+footer h3 {
+  color: #fff;
+  letter-spacing: 0.2em;
+  font-size: 24px;
+  border-bottom: solid 1.5px currentColor;
+
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  color: inherit;
+}
+footer a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+footer div {
+  margin: 10px 0;
+}
+
+.brend {
+  background-blend-mode: soft-light;
+  background: url(metal_texture-1080x1920.jpg);
+  background-color: var(--panel-main-color);
+  width: 300px;
+  height: 200px;
+}

@@ -8,7 +8,6 @@ function h ($str) {
 }
 
 $results = $pdo->query('select * from crud_db.crud order by id desc');
-// $pdo->exec('delete from crud_db.crud where id >=6');
 
 
 ?>
